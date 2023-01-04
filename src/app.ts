@@ -1,3 +1,10 @@
+import { Category } from "./enums";
+import { Book, Logger, Person, Author, Librarian, TOptions, Magazine } from "./iterfaces";
+import { ReferenceItem, UL, RefBook, Shelf } from "./classes";
+import { BookOrUndefined, PersonBook, BookProperties, BookRequiredFields, UpdatedBook, CreateCustomerFunctionType } from "./types";
+import { damageLogger, getAllBooks, printRefBook, purge, getObjectProperty, createCustomer, getBookTitlesByCategory, getBooksByCategory, logCategorySearch, getBooksByCategoryPromise, logSearchResults } from "./functions";
+import { Library } from "./classes/library"
+
 showHello('greeting', 'TypeScript');
 
 function showHello(divName: string, name: string) {
@@ -23,7 +30,7 @@ function showHello(divName: string, name: string) {
 // let favoriteLibrarian: Librarian /* & A */ = new UL.UniversityLibrarian()
 // favoriteLibrarian.name = 'Julia'
 // favoriteLibrarian.assistsCustomer('Vladyslav', 'How to be the best?')
-// console.log(favoriteLibrarian.a)
+// console.log(favoriteLibrarian.a) 
 
 
 // const personBook: PersonBook = {
@@ -34,7 +41,7 @@ function showHello(divName: string, name: string) {
 //     author: 'Julia',
 //     available: true,
 //     category: Category.Angular
-// }
+// } 
 
 // const options = {};
 // const options2 = setDefaultConfig(options)
